@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 校验提交信息是否符合 conventional commits 规范
+npx --no -- commitlint --edit ${1}
