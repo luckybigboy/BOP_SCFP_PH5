@@ -7,9 +7,13 @@
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
+    "api": "yarn upgrade front-api",
     "prepare": "husky"
   },
   "dependencies": {
+    "axios": "^1.17.0",
+    "front-api": "git+http://192.168.186.118/frontend-api/worldrou-api-render.git#master",
+    "pinia": "^3.0.4",
     "vant": "^4.9.24",
     "vue": "^3.5.34"
   },
@@ -22,6 +26,7 @@
     "@vue/tsconfig": "^0.9.1",
     "eslint-plugin-vue": "^10.9.2",
     "husky": "^9.1.7",
+    "prettier": "^3.8.4",
     "typescript": "~6.0.2",
     "unocss": "^66.7.0",
     "unplugin-auto-import": "^21.0.0",
